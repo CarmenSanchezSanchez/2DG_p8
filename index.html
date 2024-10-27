@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8_flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        #caixa{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+        }
+        .rectangle{
+            width: 13vw;
+            height: 56vh;
+            background-color: green;
+            order: -2;
+            align-self: flex-end;
+        }
+        .cercle{
+            width: 30vw;
+            height: 30vw;
+            border-radius: 30vw;
+            background-color: red;  
+            order: -1;
+            align-self: center;
+            margin-top: 95px;
+        }
+        .quadrat{
+            width: 16vw;
+            height: 16vw;
+            background: blue;
+            align-self: flex-end;
+        }
+                /* mouse over cercle */
+                a:hover .cercle{
+                background: rgba(255, 0, 0, 0.368);
+            }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <a href="img/Foto composición.jpg">
+            <div class="cercle"></div>
+        </a>
+            <div class="quadrat"></div>
+            <div class="rectangle"></div>
+    </div>
+</body>
+</html>
